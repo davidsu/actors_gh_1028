@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Base44Logo } from "@/components/Base44Logo";
+import LiveCounter from "@/components/LiveCounter";
 import { Plus, Trash2, CheckCircle2 } from "lucide-react";
 
 const Task = base44.entities.Task;
@@ -69,6 +70,8 @@ export default function App() {
             </p>
           )}
         </div>
+
+        <LiveCounter />
 
         {/* Add Task Form */}
         <form onSubmit={handleSubmit} className="mb-8">
